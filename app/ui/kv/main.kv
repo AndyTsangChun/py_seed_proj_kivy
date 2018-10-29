@@ -1,0 +1,17 @@
+#:kivy 1.10.1
+
+#:import FadeTransition kivy.uix.screenmanager.FadeTransition
+#:include app/ui/kv/widget/actionbar.kv
+#:include app/ui/kv/style/buttonstyle.kv
+#:include app/ui/kv/activity/calendaractivity.kv
+#:include app/ui/kv/activity/videoactivity.kv
+
+ScreenManagement:
+	transition: FadeTransition()
+	CalendarActivity:
+		id: "calendar_activity" 
+		name: "calendar_activity"
+	VideoActivity:
+		id: "video_activity"
+		name: "video_activity"
+	

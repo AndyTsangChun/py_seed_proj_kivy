@@ -1,0 +1,20 @@
+<MyActionBar@ActionBar>
+	background_color: [0,0,255,1]
+	ActionView:
+		use_separator: True
+		ActionPrevious:
+			title: 'Demo'
+			with_previous: False
+		ActionGroup:
+			text: 'View'
+			#color: 0,0,0,1
+			mode: 'spinner'
+			ActionButton:
+				text: 'Video'
+				on_release: app.root.current="video_activity"
+			ActionButton:
+				text: 'Calendar'
+				on_release: app.root.current="calendar_activity"
+		ActionButton:
+			text: 'Help'
+			#color: 0,0,0,1

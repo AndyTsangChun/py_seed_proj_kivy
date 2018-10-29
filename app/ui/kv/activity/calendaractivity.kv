@@ -1,0 +1,43 @@
+#:kivy 1.10.1
+
+<CalendarActivity@Screen>
+	BoxLayout:
+		orientation: "vertical"
+		MyActionBar:
+		CalendarPanel:
+			id:calendar_panel
+
+<CalendarPanel@GridLayout>
+	cols:7
+	rows:5
+	MyButton:
+		text:'1'
+	MyButton:
+		text:'2'
+	MyButton:
+		text:'3'
+	MyButton:
+		text:'4'
+	MyButton:
+		text:'5'
+	MyButton:
+		text:'6'
+	MyButton:
+		text:'7'
+	ButtonStyle:
+		text:'8'
+	ButtonStyle:
+		text:'9'
+	ButtonStyle:
+		text:'10'
+	ButtonStyle:
+		text:'11'
+	ButtonStyle:
+		text:'12'
+	ButtonStyle:
+		text:'13'
+	ButtonStyle:
+		text:'14'
+
+<MyButton@Button>
+	on_press:self.parent.buttonCallBack(self)
